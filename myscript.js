@@ -199,6 +199,10 @@ window.addEventListener('load', () => {
             //clean up
             pushed = [];
             manageConfirmForm();
+            const fields = document.querySelectorAll('.data');
+            fields.forEach((element) => {
+            element.value = '';
+    });
         }, 2000);
         console.log(reservedSeats);
         let myjson = JSON.stringify(reservedSeats);
